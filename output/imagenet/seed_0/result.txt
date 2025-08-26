@@ -1,0 +1,50 @@
+Namespace(in_dataset_name='imagenet', ood_dataset_name_list=['inaturalist', 'open_image', 'clean', 'ninco', 'sun', 'places', 'texture'], arch='ViT-B/16', seed=0, device='cuda:3', output_folder='output/imagenet/seed_0/', load_saved_labels=False)
+------------------------------------------
+
+--- Creating initial negative labels using CSP
+time: 82.48 seconds
+number of initial negative labels — nouns: 7023, adjectives: 1404 - total: 8427
+
+--- Filtering negative labels using NegFilter
+time: 8368.32 seconds
+number of final negative labels — nouns: 4998, adjs: 1372 - total: 6370
+examples of negative labels nouns: ['external carotid artery', 'white currant', 'pasqueflower']
+examples of negative labels adjs: ['bacchanalian pattern', 'gooey landscape', 'rutted creature']
+pos_features shape:  torch.Size([1000, 512])
+neg_features shape:  torch.Size([6370, 512])
+
+--- Starting predictions on testing images
+in (imagenet) - number:  50000
+ood0 (inaturalist) - number:  10000
+ood1 (open_image) - number:  17632
+ood2 (clean) - number:  2715
+ood3 (ninco) - number:  5878
+ood4 (sun) - number:  10000
+ood5 (places) - number:  10000
+ood6 (texture) - number:  5640
+time: 5173.99 seconds
+
+
+--- Final results
+
+------------------ inaturalist -------------------
+score0     auroc: 0.9957057860000001    fpr: 0.0151
+
+------------------ open_image -------------------
+score0     auroc: 0.9502297368421053    fpr: 0.24030172413793102
+
+------------------ clean -------------------
+score0     auroc: 0.90701991160221    fpr: 0.33038674033149174
+
+------------------ ninco -------------------
+score0     auroc: 0.8189846937733924    fpr: 0.6211296359305887
+
+------------------ sun -------------------
+score0     auroc: 0.9463867349999999    fpr: 0.2293
+
+------------------ places -------------------
+score0     auroc: 0.904161655    fpr: 0.391
+
+------------------ texture -------------------
+score0     auroc: 0.9468627180851064    fpr: 0.21152482269503547
+
