@@ -99,7 +99,7 @@ As an illustration, we provide the saved results for **ImageNet-1K** with **seed
 | Places            | 90.42     | 39.10      |
 | Textures          | 94.69     | 21.15      |
 
-> **Note:** Only the first four datasets are considered valid OOD data and are included in the main paper results, as they contain minimal or no in-distribution contamination. In contrast, **SUN, Places, and Textures** contain notable overlap with ImageNet-1K classes, leading to in-distribution contamination. For further discussion, refer to our paper and the [NINCO paper](https://arxiv.org/abs/2306.00826).
+> **Note:** Only the first four datasets are considered valid OOD data and are included in the main paper results, as they contain minimal or no in-distribution contamination. In contrast, **SUN, Places, and Textures** contain notable overlap with ImageNet-1K classes, leading to in-distribution contamination. For further discussion, refer to [our paper](https://arxiv.org/abs/2507.09795) and the [NINCO paper](https://arxiv.org/abs/2306.00826).
 
 The table above shows results for **ImageNet-1K with seed 0**.  
 For the complete set of experiments and results, averaged over 10 seeds, please refer to our main paper.
