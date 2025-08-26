@@ -86,19 +86,18 @@ The results of each experiment—including evaluation metrics, logs, and negativ
 
 ## 📊 Example Results
 
-As an illustration, we provide the saved results for **ImageNet-1K** with **seed 0**, available in [`output/imagenet/seed_0/`](./output/imagenet/seed_0/).  
-These include the saved negative labels, LLM refinement logs, and final evaluation results.
+As an illustration, we provide the saved results for **ImageNet-1K** with **seed 0**, available in [`output/imagenet/seed_0/`](./output/imagenet/seed_0/). These include the saved negative labels, LLM refinement logs, and final evaluation results.
 
-| **In-Distribution: ImageNet-1K (Seed 0)**  |           |            |
-|--------------------------------------------|-----------|------------|
-| OOD Dataset                                | AUROC (%) | FPR95 (%)  |
-| ⭐ **iNaturalist**                         | 99.57     | 1.51       |
-| ⭐ **OpenImage-O**                         | 95.02     | 24.03      |
-| ⭐ **Clean**                               | 90.70     | 33.04      |
-| ⭐ **NINCO**                               | 81.90     | 62.11      |
-| SUN                                        | 94.64     | 22.93      |
-| Places                                     | 90.42     | 39.10      |
-| Textures                                   | 94.69     | 21.15      |
+**Results (In-Distribution: ImageNet-1K, Seed 0):**
+| OOD Dataset       | AUROC (%) | FPR@95 (%) |
+|-------------------|-----------|------------|
+| ⭐ **iNaturalist** | 99.57     | 1.51       |
+| ⭐ **OpenImage-O** | 95.02     | 24.03      |
+| ⭐ **Clean**       | 90.70     | 33.04      |
+| ⭐ **NINCO**       | 81.90     | 62.11      |
+| SUN               | 94.64     | 22.93      |
+| Places            | 90.42     | 39.10      |
+| Textures          | 94.69     | 21.15      |
 
 > **Note:** Only the first four datasets are considered valid OOD data and are included in the main paper results, as they contain minimal or no in-distribution contamination. In contrast, **SUN, Places, and Textures** contain notable overlap with ImageNet-1K classes, leading to in-distribution contamination. For further discussion, refer to our paper and the [NINCO paper](https://arxiv.org/abs/2306.00826).
 
