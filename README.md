@@ -2,7 +2,7 @@
 
 [![Paper](https://img.shields.io/badge/Paper-arXiv:2507.09795-b31b1b.svg)](https://arxiv.org/abs/2507.09795)
 [![ICCV 2025](https://img.shields.io/badge/ICCV-2025-7b1fa2.svg)](https://iccv.thecvf.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/ah-ansari/NegRefine?tab=MIT-1-ov-file)
+[![License](https://img.shields.io/github/license/ah-ansari/NegRefine)](https://github.com/ah-ansari/NegRefine/blob/main/LICENSE)
 
 Official implementation of **NegRefine**, accepted to **ICCV 2025**.  
 > 📄 [Paper on arXiv](https://arxiv.org/abs/2507.09795)
