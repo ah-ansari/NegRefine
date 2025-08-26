@@ -89,9 +89,9 @@ The results of each experiment—including evaluation metrics, logs, and negativ
 As an illustration, we provide the saved results for **ImageNet-1K** with **seed 0**, available in [`output/imagenet/seed_0/`](./output/imagenet/seed_0/).  
 These include the saved negative labels, LLM refinement logs, and final evaluation results.
 
-| **In-Distribution: ImageNet-1K (Seed 0)**                           |
+| **In-Distribution: ImageNet-1K (Seed 0)**  |           |            |
 |--------------------------------------------|-----------|------------|
-| OOD Dataset                                | AUROC (%) | FPR95 (%) |
+| OOD Dataset                                | AUROC (%) | FPR95 (%)  |
 | ⭐ **iNaturalist**                         | 99.57     | 1.51       |
 | ⭐ **OpenImage-O**                         | 95.02     | 24.03      |
 | ⭐ **Clean**                               | 90.70     | 33.04      |
